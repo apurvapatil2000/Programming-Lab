@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gate Exam Registration Form</title>
+</head>
+<body bgcolor="Lightskyblue">
+	<header><h1>GATE EXAM Registration Form<h1></header>
+	<form method="get">
+
+		<fieldset>
+		<h2>Student Information</h2>
+		
+		<label>First Name:</label>
+		<input type="text" name="firstname" size="15"><br><br>
+		<label>Middle Name:</label>
+		<input type="text" name="middlename" size="15"><br><br>
+		<label>Last Name:</label>
+		<input type="text" name="lastname" size="15"><br><br>
+		<label>Parent's Name:</label>
+		<input type="text" name="parentsname"><br><br>
+		<label>Mobile No.:</label> 
+		<input type="text" name="country code"  value="+91" size="2"/>   
+		<input type="text" name="phone" size="10"/> <br> <br> 
+		<label>Email ID:</label>
+		<input type="email" id="email" name="email"/><br><br>
+		<label>ID Proof:</label>
+		<select>
+			<option value="Adhar Card" selected="Adhar Card">Adhar Card</option>
+			<option value="Birth Certificate">Birth Certificate</option>
+			<option value="License">License</option>
+			<option value="Pan Card">Pan Card</option>
+			<option value="12th Marklist">12th Marklist</option>
+			<option value="10th Marklist">10th Marklist</option>
+		</select><br><br>
+		<label>Address:</label><br>
+		<textarea cols="60" rows="5" value="address" required></textarea><br><br>    
+		</fieldset>
+		
+		<fieldset>
+			<h2>Educational Information</h2>
+			<label>Qualification:</label>
+			<select required> 
+				<option value="-Select Course-" selected="Course">- Select Course -</option>  
+				<option value="BCA">BCA</option>  
+				<option value="BBA">BBA</option>  
+				<option value="B.Tech">B.Tech</option>  
+				<option value="MBA">MBA</option>  
+				<option value="MCA">MCA</option>  
+				<option value="M.Tech">M.Tech</option>  
+			</select><br><br>
+			<label>Branch:</label>
+			<select required >
+				<option value="-Select Branch-">- Select Branch -</option>
+				<option value="CSE">Computer Science and Engineering</option>
+				<option value="ELE">Electrical Engineering</option>
+				<option value="MECH">Mechanical Engineering</option>
+				<option value="ET">Electronics Engineering</option>
+				<option value="CV">Civil Engineering</option>
+				<option value="IT">Information Technology</option>
+			</select><br><br>
+			<label for="Uname">University Name:</label>
+			<input list="Uniname" id="Uname" name="Uname">
+			<datalist id="Uniname">
+				<option value="University of Pune,Pune">
+				<option value="Mumbai University,Mumbai">
+				<option value="Maharashtra State Board of Technical Education, Mumba">
+				<option value="Shivaji University, Kolhapur">
+				<option value="The Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur">
+			</datalist>
+			<br><br>
+			<label for="clg-name">College Name:</label>
+			<input list="college name" id="clg-name" name="clg-name"> 
+			<datalist id="college name">
+				<option value="- Select College -">
+				<option value="A. P. SHAH INSTITUTE OF TECHNOLOGY">
+				<option value="WAINGANGA POLYTECHNIC">
+				<option value="ASHOKRAO MANE POLYTECHNIC,SAVE">
+				<option value="DR.J.J.MAGDUM POLYTECHNIC,JAYSINGPUR">
+				<option value="Walchand College of Engineering, Sangli">
+				<option value="College of Engineering, Pune">
+				<option value="NAV VIDYA NIKETAN INSTITUTE OF TECHNOLOGY">
+				<option value="G. H. RAISONI POLYTECHNIC">
+				<option value="YASHWANTRAO CHAVAN SCHOOL OF RURAL DEVELOPMENT">
+				<option value="SHREEYASH PRATISHTHAN'S SHREEYASH POLYTECHNIC,AURANGABAD">
+				<option value="SAMARTH POLYTECHNIC">
+				<option value="VISHWESHWARAYYA ABHIYANTRIKI PADVIKA MAHAVIDYALAYA">
+				<option value="DEOGIRI TECHNICAL CAMPUS FOR ENGINEERING AND MANAGEMENT STUDIES">
+				<option value="GOVERNMENT POLYTECHNIC HINGOLI">
+				<option value="YESHWANTRAO CHAVAN COLLEGE OF ENGINEERING">
+				<option value="SINHGAD INSTITUTE OF TECHNOLOGY">
+			</datalist><br><br>
+			<label>Exam Seat No.:</label>
+			<input name="examseatno" size="20">
+		</fieldset>
+
+		<fieldset>
+			<h2>Exam Preferences</h2>
+			<label for="branch">GATE exam paper branch:</label>
+			<select list="paper" id="branch" name="branch">
+				<option value="Computer Science and Engineering">Computer Science and Engineering</option>
+				<option value="ae">Aerospace Engineering</option>
+				<option value="age">Agricultural Engineering</option>
+				<option value="Arctp">Architecture and Planning</option>
+				<option value="b">Biomedical</option>
+				<option value="CE">Civil Engineering</option>
+				<option value="cheme">Chemical Engineering</option>
+				<option value="Chm">Chemistry</option>
+				<option value="Ele">Electrical Engineering</option>
+				<option value="et">Electronics and Telecommunication Engineering</option>
+				<option value="eco">Ecology and Evolution</option>
+			</select><br><br>
+			<label for="city">City Preferences:</label>
+			<select id="city">
+				<optgroup label="Maharashtra">
+					<option value="Pune">Pune</option>
+					<option value="Mumbai">Mumbai</option>
+					<option value="Sangli">Sangli</option>
+					<option value="Kolhapur">Kolhapur</option>
+					<option value="Nagpur">Nagpur</option>
+					<option value="Nashik">Nashik</option>
+					<option value="Aurangabad">Aurangabad</option>
+					<option value="Satara">Satara</option>
+				</optgroup>
+				<optgroup label="Madhya Pradesh">
+					<option value="b">Bhopal</option>
+					<option value="Indore">Indore</option>
+					<option value="Ujjain">Ujjain</option>
+					<option value="Gwalior">Gwalior</option>
+					<option value="Jabalpur">Jabalpur</option>
+				</optgroup>
+				<optgroup label="Gujarat">
+					<option value="Surat">Surat</option>
+					<option value="rajkot">Rajkot</option>
+					<option value="ahmedabad">Ahmedabad</option>
+					<option value="Vadodara">Vadodara</option>
+					<option value="Gandhinagar">Gandhinagar</option>
+				</optgroup>
+				<optgroup label="Kerala">
+					<option value="kochi">Kochi</option>
+					<option value="Thrissur">Thrissur</option>
+					<option value="k">Kozhikode</option>
+					<option value="ko">Kollam</option>
+					<option value="Kannur">Kannur</option>	
+				</optgroup>
+				<optgroup label="Uttar Pradesh">
+					<option value="Lucknow">Lucknow</option>
+					<option value="Kanpur">Kanpur</option>
+					<option value="Varanasi">Varanasi</option>
+					<option value="Agra">Agra</option>
+					<option value="M">Meerut</option>
+				</optgroup>
+			</select>
+		</fieldset>
+
+		<button type="button" value="back" formaction="back">Back</button>
+		<button type="button" name="button" formaction="Reset" formmethod="post">Reset</button>
+		<button type="button" name="button" formaction="Submit" ondblclick="myalert()">Submit</button>
+ 			<script>
+				function myalert(){
+					alert("Form is Submitted");
+				}
+			</script>
+	</form>
+</body>
+</html>
