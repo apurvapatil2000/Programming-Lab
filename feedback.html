@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Feedback</title>
+	<style >
+		header{font-size: 25px; font-family: all;}
+		form{width:1000px;font-size: 25px}
+	</style>
+</head>
+<body>
+		<header>
+			<h1>Course Feedback</h1>
+		</header> 
+		<form method="get" action="">
+
+			First Name: <input type="text" name="name" accept="name" required="name" size="40"><br><br>
+			Last Name: <input type="text" name="name" accept="name" required="name" size="40"><br><br>
+			Email ID: <input type="Email" name="Email" accept="Email" required="name" size="40"><br><br>
+
+			<br><label for="image" >Upload Image:</label><br>
+			<input type="file" name="image" id="image" accept="image/*, .pdf,.jpg,.jpeg,.png"> 
+			<br><br><br>
+			Comment:<br><textarea name='comment' id='comment' rows="7" cols="60" maxlength="500" placeholder="Enter your comment here"></textarea><br><br><br>
+ 			<button type="button" name="button" formaction="Submit" ondblclick="myalert()">Submit</button>
+ 			<script>
+				function myalert(){
+					alert("Form is Submitted");
+				}
+			</script>
+ 			<button type="button" name="button" formaction="Reset" formmethod="post">Reset</button>
+			<br><br>	
+		</form>
+	</p>
+</body>
+</html>
